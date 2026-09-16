@@ -167,6 +167,8 @@ clip() {
 		local copy_cmd=( xclip -selection "$X_SELECTION" )
 		local paste_cmd=( xclip -o -selection "$X_SELECTION" )
 		local display_name="$DISPLAY"
+  elif [[ "$(uname -r)" =~ [Mm]icrosoft|[Ww][Ss][Ll] ]]; then
+		local copy_cmd=( clip.exe )
 	else
 		die "Error: No X11 or Wayland display and clipper detected"
 	fi

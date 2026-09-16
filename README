@@ -1,3 +1,7 @@
+Forked from: https://github.com/zx2c4/password-store
+
+Added support for WSL
+
 ======================
 Simple Password Store
 by Jason Donenfeld
@@ -23,6 +27,8 @@ Depends on:
   http://sourceforge.net/projects/xclip/
 - wl-clipboard (for wlroots Wayland-based environments)
   https://github.com/bugaevc/wl-clipboard
+- clip.exe (for WSL environments)
+  https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/clip
 - tree >= 1.7.0
   http://mama.indstate.edu/users/ice/tree/
 - GNU getopt
